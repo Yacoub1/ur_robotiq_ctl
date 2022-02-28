@@ -29,7 +29,7 @@ Run the **2f140_client_node.cp** which request the ROSSRV with the following par
 * pose: 50
 
 Code:
-* ```
+ ```
 rosrun ur_robotiq_ctl 2f140_client_node
 ```
 This parameter can be changed in the **2f140_client_node.cp** file, lines (18-20), and then re build the packge and rerun **2f140_client_node.cp**.

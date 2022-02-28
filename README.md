@@ -9,13 +9,19 @@ Universal Robot Scripts Package to control Robotiq grippers, this package implim
 
 ## How to use?
 1. Install the package in the ROS Catkin workspace
-  'git clone https://github.com/Yacoub1/ur_robotiq_ctl.git'
+  '''
+  git clone https://github.com/Yacoub1/ur_robotiq_ctl.git
+  '''
 3. Build the package
-    '''ctakin_make'''
+    '''
+    ctakin_make
+    '''
     
 4. Start the ROS Service Node
 
-  '''rosrun ur_robotiq_ctl 2f140_srv_node'''
+  '''
+  rosrun ur_robotiq_ctl 2f140_srv_node
+  '''
 ## How to test?
 Run the **2f140_client_node.cp** which request the ROSSRV with the following parameter:
 * force: 100 N
@@ -23,5 +29,7 @@ Run the **2f140_client_node.cp** which request the ROSSRV with the following par
 * pose: 50
 
 Code:
-* '''rosrun ur_robotiq_ctl 2f140_client_node'''
+* '''
+rosrun ur_robotiq_ctl 2f140_client_node
+'''
 This parameter can be changed in the **2f140_client_node.cp** file, lines (18-20), and then re build the packge and rerun **2f140_client_node.cp**.
